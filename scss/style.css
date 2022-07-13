@@ -1,0 +1,107 @@
+#corpo {
+  text-align: center;
+  margin: auto;
+  width: 300px;
+}
+#corpo #c1l1 {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  font-size: 50px;
+  border-top: 10px;
+  border-left: 10px;
+}
+#corpo #c2l1 {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  font-size: 50px;
+  border-top: 10px;
+  border-left: 10px;
+}
+#corpo #c3l1 {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  font-size: 50px;
+  border-top: 10px;
+  border-right: 10px;
+  border-left: 10px;
+}
+#corpo #c1l2 {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  font-size: 50px;
+  border-top: 10px;
+  border-left: 10px;
+}
+#corpo #c2l2 {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  font-size: 50px;
+  border-top: 10px;
+  border-left: 10px;
+}
+#corpo #c3l2 {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  font-size: 50px;
+  border-top: 10px;
+  border-right: 10px;
+  border-left: 10px;
+}
+#corpo #c1l3 {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  font-size: 50px;
+  border-top: 10px;
+  border-left: 10px;
+  border-bottom: 10px;
+}
+#corpo #c2l3 {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  font-size: 50px;
+  border-top: 10px;
+  border-left: 10px;
+  border-bottom: 10px;
+}
+#corpo #c3l3 {
+  width: 90px;
+  height: 90px;
+  background-color: #ffffff;
+  font-size: 50px;
+  border-top: 10px;
+  border-right: 10px;
+  border-left: 10px;
+  border-bottom: 10px;
+}
+
+#home {
+  display: block;
+  text-align: center;
+}
+#home #start {
+  border-radius: 50px;
+  width: 100px;
+}
+
+#jogo {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 0 0 5px black;
+}
+
+p {
+  text-align: center;
+  color: black;
+}/*# sourceMappingURL=style.css.map */
