@@ -1,5 +1,10 @@
-# JogoDaVelha
+
+## JogoDaVelha
 <hr>
+
+## Link do Jogo [Jogo da Velha](https://eversondias.github.io/JogoDaVelha/)
+<hr>
+
 ## Tela Inicial
 
 ![escolha de jogador](public/imgHome.png)
