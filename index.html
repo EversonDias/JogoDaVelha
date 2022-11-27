@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagems/icons/icon.png" type="image/x-icon">
     <title>Jogo da Velha</title>
-    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 
 <body>
@@ -18,22 +18,15 @@
             <p> Player2 <input type="text" id="nPlay2">
             <p> <input type="button" id="start" value="Start" onclick="inicio()">
         </div>
-        <div id="jogo">
+        <div id="gamer" class="gamer">
             <h1>Jogo da Velha</h1>
-            <input type="button" value=" " id="c1l1">
-            <input type="button" value=" " id="c2l1">
-            <input type="button" value=" " id="c3l1">
-            <input type="button" value=" " id="c1l2">
-            <input type="button" value=" " id="c2l2">
-            <input type="button" value=" " id="c3l2">
-            <input type="button" value=" " id="c1l3">
-            <input type="button" value=" " id="c2l3">
-            <input type="button" value=" " id="c3l3">
-            <p id="idplay1"></p>
-            <p id="idplay2"></p>
+            <div id="board" class="board">
+            </div>
+            <p id="idPlay1"></p>
+            <p id="idPlay2"></p>
         </div>
     </div>
-    <script src="config.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,19 @@
+{
+  "name": "jogodavelha",
+  "description": "<hr>",
+  "version": "1.0.0",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EversonDias/JogoDaVelha.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EversonDias/JogoDaVelha/issues"
+  },
+  "homepage": "https://github.com/EversonDias/JogoDaVelha#readme"
+}
