@@ -46,23 +46,39 @@ function inicio() {
 }
 
 const isVictoria = (position, turn) => {
-    if(board[position[0]] === turn.mark && board[position[1]] === turn.mark && board[position[2]] === turn.mark) {
-        alert(`victoria ${turn.name}`);
+    if (board[position[0]] === turn.mark && board[position[1]] === turn.mark && board[position[2]] === turn.mark) {
+        return true;
     }
 };
 
-const verifyVictoria = (turn) => {
-    isVictoria([0,1,2], turn);
-    isVictoria([3,4,5], turn);
-    isVictoria([6,7,8], turn);
+const isTie = (position) => {
+    const possibility = position.map((index) => board[index])
+    const everyTrue = [
+        possibility.includes('O'),
+        possibility.includes('X'),
+    ];
+    return everyTrue.every((data) => data === true);
+}
 
-    isVictoria([0,3,6], turn);
-    isVictoria([1,4,7], turn);
-    isVictoria([2,5,8], turn);
+const victoryPossibility = [
+    [0, 1, 2], [3, 4, 5], [6, 7, 8],
+    [0, 3, 6], [1, 4, 7], [2, 5, 8],
+    [0, 4, 8], [6, 4, 2],
+]
 
-    isVictoria([0,4,8], turn);
-    isVictoria([6,4,2], turn);
+const verifyVictory = (turn) => {
+    const win = victoryPossibility.map((possibility) => isVictoria(possibility, turn));
+    if (win.includes(true)) {
+        alert('win' + turn.name);
+    }
 };
+
+const verifyTie = (turn) => {
+    const tie = victoryPossibility.map((possibility) => isTie(possibility, turn));
+    if (tie.every((data) => data === true)) {
+        console.log('tie');
+    }
+}
 
 const handleSelected = (positionBoard) => {
     const position = positionBoard.target;
@@ -74,7 +90,8 @@ const handleSelected = (positionBoard) => {
 
         position.innerHTML = turn.mark;
         board[position.id] = turn.mark;
-        verifyVictoria(turn);
+        verifyTie(turn);
+        verifyVictory(turn);
         screenTurn(isPlay1);
     }
 };
