@@ -24,6 +24,8 @@
 
 O Famoso jogo da velha onde duas pessoal podem jogar, na primeira tela você pode escolher um nome para o player 1 e player 2 ou deixa o nome default, na tela do jogo na parte inferior tem um placar que mostra de quem é a vez, ao fim do jogo pode escolher jogar novamente com os mesmo nomes ou finalizar que retorna para a primeira tela.
 
+![video](public/jogo.gif)
+
 # Status do Projeto
 
 > 💹 Alpha 💹
@@ -68,8 +70,6 @@ a aplicação estará aberta nesta rota
 ```bash
 http://127.0.0.1:8080
 ```
-
-![video](public/jogo.gif)
 
 ou acesse através do link
 
